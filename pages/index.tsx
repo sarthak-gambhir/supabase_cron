@@ -53,15 +53,16 @@ export default function Home() {
         {loading ? "Running..." : "Run Heartbeat"}
       </button>
 
-      {result && (
+      {result !== null && (
         <p
           style={{
             marginTop: "1rem",
             textAlign: "center",
             padding: "1rem",
-            border: "1px solid #ccc",
+            border: `2px solid ${result ? "#034520" : "#7F0606"}`,
+            color: result ? "#034520" : "#7F0606",
+            backgroundColor: result ? "#e2ffe9" : "#ffe9ec",
             borderRadius: "8px",
-            width: "80%",
           }}
         >
           {message}
