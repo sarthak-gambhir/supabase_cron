@@ -1,0 +1,5 @@
+{
+  "cron": {
+    "jobs": [{ "path": "/api/heartbeat", "schedule": "0 * * * *" }]
+  }
+}
